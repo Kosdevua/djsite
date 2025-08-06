@@ -1,4 +1,5 @@
-import normalize from "../../../node_modules/modern-normalize/package.json";
+import "./Navbar.css";
+
 import { useDispatch, useSelector } from "react-redux";
 import { toggleUnlock } from "../../store/slice";
 const Navbar = () => {
