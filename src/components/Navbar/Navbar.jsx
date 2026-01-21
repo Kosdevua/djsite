@@ -1,4 +1,5 @@
 import "./Navbar.css";
+import "tailwindcss";
 
 import { useDispatch, useSelector } from "react-redux";
 import { toggleUnlock } from "../../store/slice";
@@ -14,15 +15,17 @@ const Navbar = () => {
 
   return (
     <>
-      <nav className="navbar">
+      <nav className="">
         <div className="navbar__burger" onClick={handleClick}>
           <span></span>
           <span></span>
           <span></span>
         </div>
-        <ul className="navbar__list">
+        <ul className="flex flex-col gap-2 navbar__list">
           <li>
-            <a href="#home">Головна</a>
+            <a className="" href="#home">
+              Головна
+            </a>
           </li>
           <li>
             <a href="#about">Про себе</a>
